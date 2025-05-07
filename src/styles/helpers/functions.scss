@@ -3,7 +3,7 @@
 
 @function fluid($max, $min, $isEndOfLaptop: false) {
   $maxViewportWidth: $container-desktop-width;
-  $minWiewportWidth: 390;
+  $minViewportWidth: 390;
 
   @if ($isEndOfLaptop) {
   $minWiewportWidth: $container-laptop-width;
