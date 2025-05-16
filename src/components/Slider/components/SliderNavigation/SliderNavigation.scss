@@ -1,0 +1,33 @@
+.slider-navigation {
+  display: flex;
+  align-items: center;
+
+  &--tile {
+    column-gap: fluid-to-laptop(16, 12);
+    padding: fluid-to-laptop(16, 12);
+    background: var(--color-black-06);
+    border-radius: var(--border-radius-l);
+
+    @include laptop {
+      border-radius: var(--border-radius-m);
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    column-gap: 3px;
+
+    &-bullet {
+      height: 4px;
+      width: 16px;
+      background: var(--color-black-20);
+      border-radius: 100px;
+      transition-duration: var(--transition-duration);
+
+      &.is-active {
+        width: 23px;
+        background: var(--color-red-45);
+      }
+    }
+  }
+}
